@@ -1,0 +1,212 @@
+.spacer {
+    flex: 1;
+  }
+
+.dropdownMain {
+  color: white;
+  width: 33%;
+  display: none;
+  
+}
+#menu {
+  display: none;
+}
+#menu li {
+  padding-right: 30px;
+  list-style-type: none;
+}
+#menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+}
+.open-menu, .close-menu {
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+.open-menu {
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+.close-menu {
+  top: 30px;
+  left: 30px;
+}
+#check {
+  display: none;
+}
+
+
+.dropdownMain li{
+  width: 10%;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #125699;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown a {
+
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    color: #2C2C2C !important;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.15em !important;
+
+}
+
+.headMain {
+    margin-bottom: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu-li:hover .dropdown {
+    display: block;
+}
+
+.menu-main{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    font-weight: 550;
+}
+.menu-li {
+    display: inline;
+    float: left;
+    margin-right: 30px;
+}
+
+.menu-li a{
+    color: white;
+    font-size: 1em;
+}
+
+.toolbar {
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+
+  .toolbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo:hover,
+  .toolbar #youtube-logo:hover {
+    opacity: 0.8;
+  }
+
+  a,
+  a:visited,
+  a:hover {
+    color: #1976d2;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #125699;
+  }
+
+  @media only screen and (max-width:420px){
+    .menu-li a {
+      font-size: .7em;
+    }
+    .spacer {
+      display: none;
+    }
+    .dropdownMain {
+      display: block;
+    }
+    #menu {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      z-index: 200;
+      background-color: #125699;
+      transition: all 0.2s ease-in-out;
+      border-right: 3px solid white;
+      border-top: 3px solid white;
+      
+    }
+    .menuBox {
+      width: 33%;
+    }
+    #menu {
+      display: flex;
+    }
+
+    #menu li {
+      margin-top: 40px;
+      padding: 0;
+    }
+    #menu li a {
+      padding: 10px;
+    }
+    .open-menu, .close-menu {
+      display: block;
+
+    }
+    #check:checked ~ #menu {
+      left: 0;
+    }
+    #check:checked ~ #menu li:visited ~ #menu {
+      display: none;
+    }
+    #menImg {
+      width: 40%;
+      
+      margin: 0;
+    }
+    .close-menu {
+      font-size: 17px;
+    }
+  }
+
+  @media only screen and (min-width:500px){
+    .menu-li a {
+      font-size: 1.2em;
+    }
+    .spacer {
+      display: block;
+    }
+    .imgLog {
+      
+    }
+    
+  }

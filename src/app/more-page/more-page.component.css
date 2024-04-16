@@ -1,0 +1,219 @@
+.male{
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 20px;
+    filter: brightness(50%);
+    
+}
+
+.img-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 100px;
+    
+    
+}
+
+
+.txt-wrap {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   color: white;
+   left: 0;
+   padding: 5%;
+   margin-top: 13%;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.txt-wrap h3 {
+    font-size: 300%;
+    display: block;
+}
+
+h2{
+    font-size: 2.5em;
+    color: #1976d2;
+}
+
+h3 {
+   
+   margin-bottom: 0;  
+  
+   
+}
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    
+}
+
+.sh3 {
+    font-size: 2.3em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ser-dom {
+    border: 3px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    height: 500px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.ser-kd {
+    border: 3px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    height: 500px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ser-ul {
+    font-size: 1.5em;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.ser-li {
+    margin-bottom: 12px;
+    margin-top: 20px;
+    position: relative;
+    font-size: 1em;
+    
+}
+
+
+.columns {
+    float: left;
+    width: 33%;
+    padding: 8px;
+    margin-top: 30px
+  }
+
+/* Style the list */
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+/* List items */
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+    background-color:#1976d2;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+#white {
+    background-color: #4a9ef2;
+}
+
+#blue {
+    background-color: #1976d2;
+}
+
+#black {
+    color: black;
+}
+#darkblue {
+    background-color: #025ab3;
+}
+
+.column-wrapper {
+    display: flex;
+}
+
+#small {
+    font-size: 15px;
+}
+
+
+@media only screen and (max-width:420px) {
+    h2 {
+        font-size: medium;
+    }
+    .txt-wrap h3 {
+        font-size: 22px;
+    }
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ser-dom {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .ser-kd {
+        width: 90%;
+    }
+    .sh3 {
+        font-size: 20px;
+    }
+    .ser-li {
+        font-size: medium;
+    }
+    .img-wrapper {
+        z-index: -1;
+    }
+    .columns {
+        width: 100%;
+    }
+    .column-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+        
+      
